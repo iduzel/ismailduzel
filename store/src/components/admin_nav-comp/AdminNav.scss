@@ -1,0 +1,29 @@
+
+.admin-nav {
+
+  
+    
+        ul {
+            display: block;
+           
+            
+            li {
+                float: left;
+                margin-right: 20px;
+                
+    
+                a {
+                    text-decoration: none;
+                    color: orange;
+                    font-weight: 500;
+                    font-size: 1.4rem;
+    
+                    &:hover {
+                       color: #CBE606;
+                    }
+                }
+                
+            }
+        }
+   
+    }

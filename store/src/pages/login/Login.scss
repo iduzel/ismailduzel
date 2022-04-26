@@ -1,0 +1,186 @@
+@import "../../index.scss";
+
+.login {
+  display: grid;
+  place-content: center;  
+  width: 100%;
+  height: 100vh; 
+
+ 
+  .bg-img {
+    background: url("https://t3.ftcdn.net/jpg/01/22/71/96/360_F_122719641_V0yw2cAOrfxsON3HeWi2Sf4iVxhv27QO.jpg")
+      no-repeat center fixed;
+    background-size: 100% 100%;
+    height: 100vh;
+    filter: blur(3px);
+    opacity: 0.3;
+  }
+
+  .login-main {
+    //width: 375px;
+    //display: flex;   
+    //border-radius: 10px;
+
+    .form {
+      position: relative;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      width: 375px;  
+      background: linear-gradient(to top, #5194a5c0, #007b99);
+
+      .logo {
+        margin: 1.5rem auto;
+        text-align: center;
+
+        .logo-image {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+
+      h3 {
+        color: #fff;
+        margin-bottom: 2rem;
+      }
+
+      .input {
+        margin-top: 0;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.541);
+        font-family: "Font Awesome 5 Free";
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        transition: 0.3s;
+
+        &::placeholder {
+          color: #fff;
+          font-weight: 600;
+          font-size: 0.9em;
+        }
+        &:focus {
+          outline: none;
+          border-bottom: 2px solid rgb(255, 255, 255);
+          color: #fff;
+        }
+      }
+
+      .checkbox-div {
+        @include flex-center(flex, row, flex-start, center);
+
+        margin-left: 0.8em;
+
+        .input-checkbox {
+          margin-right: 0.5em;
+        }
+
+        .checkbox-label {
+          color: #fff;
+          font-size: 0.8em;
+        }
+      }
+
+      .login-button {
+        margin-top: 2rem;
+        width: 50%;
+        height: 2rem;
+        border-radius: 5rem;
+        border: none;
+
+        &:hover {
+          color: #fff;
+          font-weight: bold;
+          background-color: #7579ff;
+        }
+      }
+
+      small {
+        color: #fff;
+        text-decoration: none;
+      }
+      .forgot {
+        text-decoration: none;
+      }
+      .forgot small {
+        font-size: 0.7em;
+      }
+      .forgot small:hover {
+        color: blue;
+        cursor: pointer;
+      }
+
+      .no-account {
+        margin-top: 4rem;
+
+        small {
+          span {
+            color: lightblue;
+
+            margin-left: 0.2em;
+            &:hover {
+              color: rgba(0, 0, 255, 0.822);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    /* .side {
+      background: url("https://images.unsplash.com/photo-1520176501380-9a174bf7c783?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2lnbiUyMGlufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      width: 375px;
+      height: 600px;
+      background-color: black;
+      border-radius: 0px 10px 10px 0;
+    } */
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  .login {
+   
+  }
+
+  .login-main {
+    max-width: 375px;
+   
+    border-radius: 0px;
+
+    .form {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .bg-img {
+    display: none;
+  }
+
+  .side {
+    display: none;
+    border-radius: 0px;
+  }
+}
+
+.google-login-link {
+  img {
+    height: 40px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .login {
+    .login-main {
+    width: 300px;
+      .form {
+        width: 100%;
+      }
+    }
+  }
+}

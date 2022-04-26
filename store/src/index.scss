@@ -1,0 +1,28 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 375px;
+}
+
+
+@mixin flex-center($a, $b, $c, $d) {
+  display: $a;
+  flex-direction: $b;
+  justify-content: $c;
+  align-items: $d;
+}
+
+$myFirstColor: #b224ef;
+$mySecondcolor: #7579ff;
+
+
+
+
+
+
+
+

@@ -1,0 +1,382 @@
+a {
+  text-decoration: none;
+}
+
+// EMPLOYEE LIST
+
+.employeeList {
+  background: linear-gradient(to top, #5194a526, #007a992c);
+
+  .first-row {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-part {
+    padding: 5rem;
+  }
+}
+
+// EMPLOYEE SIDE MENU
+.left-part {
+  height: 100vh;
+  border-right: 1px solid gray;
+
+  .user-part {
+    background: linear-gradient(to top, #5194a5c0, #007b99);
+    height: 250px;
+    padding: 50px;
+
+    .user-image-div {
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 1em;
+      }
+    }
+
+    h5,
+    h6 {
+      color: rgba(255, 255, 255, 0.705);
+    }
+  }
+
+  .left-menu {
+    ul {
+      margin-top: 1em;
+      list-style-type: none;
+      color: rgba(0, 0, 0, 0.712);
+
+      li {
+        margin-bottom: 1.5em;
+        a {
+          text-decoration: none;
+        }
+        span {
+          margin-right: 1.5em;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+// EMPLOYEE ADMINS
+
+.employeeAdmins {
+  background: linear-gradient(to top, #5194a526, #007a992c);
+}
+
+//DASHBOARD
+
+.dashboard {
+  background: linear-gradient(to top, #5194a526, #007a992c);
+  .main-part {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+
+    .main-part-first-row {
+      
+      .mpfr-first-col {
+        display: flex;
+
+        a {
+          padding: 0em 1em;
+          background-color: #009dfa;
+          width: 220px;
+          height: 140px;
+          margin: 1em;
+          border-radius: 5px;
+
+          &:nth-child(2) {
+            background-color: #1d999e;
+          }
+          &:nth-child(3) {
+            background-color: #fe6150;
+          }
+
+          &:nth-child(4) {
+            background-color: #b457c1;
+          }
+
+          .icon {
+            color: #fff;
+            font-size: 4em;
+            margin-bottom: 0.1em;
+          }
+
+          .info {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// EMPLOYEE DETAILS
+
+.employeeDetails {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  &>div {
+    border: 2px dotted gray;
+    padding: 2em;
+    border-radius: 5px;
+
+    .first-row {
+
+      border: 1px dotted lightgray;
+      border-radius: 5px;
+      margin-bottom: 3rem;
+      padding: 2em;
+
+      .first-row-first-col {
+
+        img {
+          width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        }
+        
+      }
+    }
+
+    .second-row {
+      border: 1px dotted lightgray;
+      border-radius: 5px;
+      padding: 2em;
+
+      .cols {
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 20px;         
+          margin-bottom: 1em;
+          width: 30%;
+
+          h4 {
+            color: rgba(0, 0, 0, 0.726);
+          }
+
+          h5 {
+            font-weight: normal;
+            color: rgba(0, 0, 0, 0.452);
+          }
+        }
+      }
+    }
+  }
+   
+}
+
+// generall
+
+.btn-act {
+  padding: 4px;
+}
+.table-responsive {
+  margin: 30px 0;
+}
+.table-wrapper {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 3px;
+  min-width: 1000px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.table-title {
+  padding-bottom: 15px;
+  background: #435d7d;
+  color: #fff;
+  padding: 16px 30px;
+  min-width: 100%;
+  margin: -20px -25px 10px;
+  border-radius: 3px 3px 0 0;
+}
+.table-title h2 {
+  margin: 5px 0 0;
+  font-size: 24px;
+}
+.table-title .btn-group {
+  float: right;
+}
+.table-title .btn {
+  color: #fff;
+  float: right;
+  font-size: 13px;
+  border: none;
+  min-width: 50px;
+  border-radius: 2px;
+  border: none;
+  outline: none !important;
+  margin-left: 10px;
+}
+.table-title .btn i {
+  float: left;
+  font-size: 21px;
+  margin-right: 5px;
+}
+.table-title .btn span {
+  float: left;
+  margin-top: 2px;
+}
+table.table tr th,
+table.table tr td {
+  border-color: #e9e9e9;
+  padding: 12px 15px;
+  vertical-align: middle;
+}
+
+table.table tr th:last-child {
+  width: 120px;
+}
+table.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fcfcfc;
+}
+table.table-striped.table-hover tbody tr:hover {
+  background: #f5f5f5;
+}
+table.table th i {
+  font-size: 13px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+table.table td:last-child i {
+  opacity: 0.9;
+  font-size: 22px;
+  margin: 0 5px;
+}
+table.table td a {
+  font-weight: bold;
+  color: #566787;
+  display: inline-block;
+  text-decoration: none;
+  outline: none !important;
+}
+table.table td a:hover {
+  color: #2196f3;
+}
+table.table td a.edit {
+  color: #ffc107;
+}
+table.table td a.delete {
+  color: #f44336;
+}
+table.table td i {
+  font-size: 19px;
+}
+table.table .avatar {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.pagination {
+  float: right;
+  margin: 0 0 5px;
+}
+.pagination li a {
+  border: none;
+  font-size: 13px;
+  min-width: 30px;
+  min-height: 30px;
+  color: #999;
+  margin: 0 2px;
+  line-height: 30px;
+  border-radius: 2px !important;
+  text-align: center;
+  padding: 0 6px;
+}
+.pagination li a:hover {
+  color: #666;
+}
+.pagination li.active a,
+.pagination li.active a.page-link {
+  background: #03a9f4;
+}
+.pagination li.active a:hover {
+  background: #0397d6;
+}
+.pagination li.disabled i {
+  color: #ccc;
+}
+.pagination li i {
+  font-size: 16px;
+  padding-top: 6px;
+}
+.hint-text {
+  float: left;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* Modal styles */
+.modal .modal-dialog {
+  max-width: 400px;
+}
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+  padding: 20px 30px;
+}
+.modal .modal-content {
+  border-radius: 3px;
+  font-size: 14px;
+}
+.modal .modal-footer {
+  background: #ecf0f1;
+  border-radius: 0 0 3px 3px;
+}
+.modal .modal-title {
+  display: inline-block;
+}
+.modal .form-control {
+  border-radius: 2px;
+  box-shadow: none;
+  border-color: #dddddd;
+}
+.modal textarea.form-control {
+  resize: vertical;
+}
+.modal .btn {
+  border-radius: 2px;
+  min-width: 100px;
+}
+.modal form label {
+  font-weight: normal;
+}
+// TABLE ENd
+
+// iframe
+
+.video-container {
+  width: 60%;
+  height: 40vh;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    min-width: 300x;
+  }
+}
+
+// SHOW HIDE
+.show {
+  visibility: visible;
+}
+.hide {
+  visibility: hidden;
+}

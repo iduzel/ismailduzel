@@ -1,0 +1,84 @@
+.navbar-comp {
+  .logo {
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .navbar-left {
+
+    .links {
+      text-decoration: none;
+      color: #CBE606;
+      margin-right: 0.5em;
+
+      &:hover {
+        cursor: pointer;
+        color: orange;
+      }
+    }
+  }
+
+  .navbar-right {
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  .dropbtn {
+    color: black;
+    padding: 8px 42px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    //z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #CBE606; 
+    border-radius: 5px ;
+   
+    
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+   
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #CBE606;
+  }
+
+  .dropdown:hover .dropdown-content {
+    border-radius: 5px;
+  }
+
+  .navbar-image {
+    width: 30px;
+    height: 30px;
+    margin-left: 1em;
+    border-radius: 50%;
+  }
+  
+}
