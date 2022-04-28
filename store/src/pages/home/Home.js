@@ -30,6 +30,7 @@ const Home = () => {
   return (
     <div className="home container">
       <h1>Home Home Sweet Home</h1>
+      <h2 className="bg-danger text-dark">Home Home Sweet Home</h2>
 
       <section className="sections">
         <h2>MongoDB</h2>{" "}
