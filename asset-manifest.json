@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ismailduzel/static/css/main.c84b4e98.css",
+    "main.js": "/ismailduzel/static/js/main.1234d3ae.js",
+    "static/media/blogBG.jpg": "/ismailduzel/static/media/blogBG.b0a8ba4e80c35cc94437.jpg",
+    "static/media/2.jpg": "/ismailduzel/static/media/2.ced4a69be7f9d51787bd.jpg",
+    "static/media/logo.jpg": "/ismailduzel/static/media/logo.01e5aa9f37a70b1a5322.jpg",
+    "index.html": "/ismailduzel/index.html",
+    "main.c84b4e98.css.map": "/ismailduzel/static/css/main.c84b4e98.css.map",
+    "main.1234d3ae.js.map": "/ismailduzel/static/js/main.1234d3ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c84b4e98.css",
+    "static/js/main.1234d3ae.js"
+  ]
+}
