@@ -93,7 +93,7 @@ const Navbar = () => {
                         <img className="navbar-image" src={userData.image} alt="" />
                       </button>
 
-                      <div className="dropdown-content">
+                      <div className="dropdown-content w-75">
                         <Link to="/profile">Profile</Link>
                         <Link to="/dashboard">Employees</Link>
                         <Link onClick={handleLogout} to="/">
