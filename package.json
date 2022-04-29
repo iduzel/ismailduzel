@@ -9,6 +9,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd store && npm run build",
+    "install-store": "cd store && npm run install",
+    "heroku-postbuild": "npm run install-store && npm run build",
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
     "client": "npm run start --prefix store",
