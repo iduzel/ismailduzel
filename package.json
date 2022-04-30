@@ -10,7 +10,7 @@
   "scripts": {
     "build": "cd store && npm run build",
     "install-client": "cd store && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
+    "react-scripts": "build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
