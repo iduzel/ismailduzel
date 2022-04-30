@@ -23,15 +23,5 @@ app.get("/", (req, res) => {
 const connectToMongoDB = require("./config/db");
 connectToMongoDB();
 
-// Accessing the path module
-const path = require("path");
-
-// Step 1:
-app.use(express.static(path.resolve(__dirname, "./store/build")));
-// Step 2:
-app.get("*", function (request, response) {
-  response.sendFile(path.resolve(__dirname, "./store/build", "index.html"));
-});
-
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Server is running at port ${port}`));
