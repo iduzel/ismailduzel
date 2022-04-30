@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "16.x",
+    "node": "16.13.1",
     "npm": "8.7.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd store && npm run build",
-    "install-store": "cd store && npm run install",
-    "heroku-postbuild": "npm run install-store && npm run build",
+    "install-client": "cd store && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
     "client": "npm run start --prefix store",
